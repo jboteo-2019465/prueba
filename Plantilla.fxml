@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="415.0" prefWidth="739.0" style="-fx-background-color: #bcd0ca;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.juanboteo.controller.ProgramadorController">
+   <children>
+      <AnchorPane layoutX="19.0" layoutY="13.0" prefHeight="367.0" prefWidth="701.0" style="-fx-background-color: #f8c78d;">
+         <children>
+            <ImageView fitHeight="29.0" fitWidth="31.0" layoutX="11.0" layoutY="14.0" onMouseClicked="#menuPrincipal" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Documents/NetBeansProjects/TonysKinal2019465/TonysKinal2019465/src/org/juanboteo/image/regresar%20(2).png" />
+               </image>
+            </ImageView>
+            <Pane layoutX="565.0" layoutY="241.0" prefHeight="148.0" prefWidth="136.0" style="-fx-background-color: #fbe404; -fx-background-radius: 50 50 0 0;">
+               <children>
+                  <ImageView fitHeight="122.0" fitWidth="122.0" layoutX="11.0" layoutY="19.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Documents/NetBeansProjects/TonysKinal2019465/TonysKinal2019465/src/org/juanboteo/image/LogoTonysKinalSinTexto-removebg-preview.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+            <Label alignment="CENTER" layoutX="565.0" layoutY="212.0" prefHeight="29.0" prefWidth="136.0" text="Usuario">
+               <font>
+                  <Font name="Franklin Gothic Demi" size="15.0" />
+               </font>
+            </Label>
+            <VBox layoutX="11.0" layoutY="117.0" prefHeight="233.0" prefWidth="122.0">
+               <children>
+                  <Button fx:id="btnNuevo" mnemonicParsing="false" prefHeight="63.0" prefWidth="122.0" styleClass="button1" stylesheets="@../Documents/NetBeansProjects/TonysKinal2019465/TonysKinal2019465/src/org/juanboteo/resources/TonysKinal.css" text="Nuevo">
+                     <font>
+                        <Font name="Franklin Gothic Demi" size="14.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="57.0" fitWidth="26.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Documents/NetBeansProjects/TonysKinal2019465/TonysKinal2019465/src/org/juanboteo/image/foldergrey_93178.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="btnEliminar" mnemonicParsing="false" prefHeight="63.0" prefWidth="122.0" styleClass="button1" stylesheets="@../Documents/NetBeansProjects/TonysKinal2019465/TonysKinal2019465/src/org/juanboteo/resources/TonysKinal.css" text="Eliminar">
+                     <font>
+                        <Font name="Franklin Gothic Demi" size="14.0" />
+                     </font>
+                     <graphic>
+                        <ImageView fitHeight="57.0" fitWidth="26.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Documents/NetBeansProjects/TonysKinal2019465/TonysKinal2019465/src/org/juanboteo/image/delete.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+               </children>
+            </VBox>
+            <Separator layoutX="160.0" layoutY="115.0" orientation="VERTICAL" prefHeight="200.0" />
+            <Separator layoutX="14.0" layoutY="99.0" prefHeight="2.0" prefWidth="136.0" />
+            <Pane layoutX="1.0" layoutY="4.0" opacity="0.15" prefHeight="50.0" prefWidth="49.0" style="-fx-background-radius: 50 50 50 50; -fx-background-color: #50131e;" />
+            <GridPane layoutX="172.0" layoutY="69.0" prefHeight="252.0" prefWidth="370.0">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="180.0" minWidth="10.0" prefWidth="138.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="241.0" minWidth="10.0" prefWidth="232.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Label alignment="CENTER" prefHeight="16.0" prefWidth="130.0" text="Código Usuario">
+                     <font>
+                        <Font name="Franklin Gothic Demi" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" prefHeight="16.0" prefWidth="130.0" text="Nombre Usuario" GridPane.rowIndex="1">
+                     <font>
+                        <Font name="Franklin Gothic Demi" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" prefHeight="16.0" prefWidth="130.0" text="Apellido Usuario" GridPane.rowIndex="2">
+                     <font>
+                        <Font name="Franklin Gothic Demi" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" prefHeight="16.0" prefWidth="130.0" text="Usuario" GridPane.rowIndex="3">
+                     <font>
+                        <Font name="Franklin Gothic Demi" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label alignment="CENTER" prefHeight="16.0" prefWidth="130.0" text="Password" GridPane.rowIndex="4">
+                     <font>
+                        <Font name="Franklin Gothic Demi" size="15.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="txtCodigoUsuario" editable="false" prefHeight="30.0" prefWidth="170.0" styleClass="futuristic-textfield" stylesheets="@../Documents/NetBeansProjects/TonysKinal2019465/TonysKinal2019465/src/org/juanboteo/resources/TonysKinal.css" GridPane.columnIndex="1">
+                     <font>
+                        <Font name="Franklin Gothic Demi Italic" size="13.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="txtNombreUsuario" editable="false" prefHeight="30.0" prefWidth="170.0" styleClass="futuristic-textfield" stylesheets="@../Documents/NetBeansProjects/TonysKinal2019465/TonysKinal2019465/src/org/juanboteo/resources/TonysKinal.css" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                     <font>
+                        <Font name="Franklin Gothic Demi Italic" size="13.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="txtApellidoUsuario" editable="false" prefHeight="30.0" prefWidth="170.0" styleClass="futuristic-textfield" stylesheets="@../Documents/NetBeansProjects/TonysKinal2019465/TonysKinal2019465/src/org/juanboteo/resources/TonysKinal.css" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                     <font>
+                        <Font name="Franklin Gothic Demi Italic" size="13.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="txtUsuario" editable="false" prefHeight="30.0" prefWidth="170.0" styleClass="futuristic-textfield" stylesheets="@../Documents/NetBeansProjects/TonysKinal2019465/TonysKinal2019465/src/org/juanboteo/resources/TonysKinal.css" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                     <font>
+                        <Font name="Franklin Gothic Demi Italic" size="13.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="txtPassword" editable="false" prefHeight="30.0" prefWidth="170.0" styleClass="futuristic-textfield" stylesheets="@../Documents/NetBeansProjects/TonysKinal2019465/TonysKinal2019465/src/org/juanboteo/resources/TonysKinal.css" GridPane.columnIndex="1" GridPane.rowIndex="4">
+                     <font>
+                        <Font name="Franklin Gothic Demi Italic" size="13.0" />
+                     </font>
+                  </TextField>
+               </children>
+            </GridPane>
+            <Label alignment="CENTER" layoutX="276.0" layoutY="7.0" prefHeight="29.0" prefWidth="149.0" text="Registro">
+               <font>
+                  <Font name="Script MT Bold" size="36.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <Pane layoutX="19.0" layoutY="355.0" opacity="0.33" prefHeight="155.0" prefWidth="564.0" style="-fx-background-color: #50131e; -fx-background-radius: 50 0 50 0;" />
+   </children>
+</AnchorPane>
